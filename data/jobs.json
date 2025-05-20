@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Software Engineer",
+    "field": "Technology",
+    "salary": 100000,
+    "stat": "smarts",
+    "threshold": 75
+  },
+  {
+    "name": "Data Scientist",
+    "field": "Technology",
+    "salary": 110000,
+    "stat": "smarts",
+    "threshold": 80
+  },
+  {
+    "name": "Civil Engineer",
+    "field": "Engineering",
+    "salary": 85000,
+    "stat": "smarts",
+    "threshold": 70
+  },
+  {
+    "name": "Model",
+    "field": "Fashion",
+    "salary": 60000,
+    "stat": "looks",
+    "threshold": 80
+  },
+  {
+    "name": "Actor",
+    "field": "Entertainment",
+    "salary": 50000,
+    "stat": "looks",
+    "threshold": 75
+  },
+  {
+    "name": "Photographer",
+    "field": "Arts",
+    "salary": 50000,
+    "stat": "looks",
+    "threshold": 65
+  },
+  {
+    "name": "Software Developer",
+    "field": "Technology",
+    "salary": 95000,
+    "stat": "smarts",
+    "threshold": 70
+  },
+  {
+    "name": "Research Scientist",
+    "field": "Science",
+    "salary": 95000,
+    "stat": "smarts",
+    "threshold": 78
+  },
+  {
+    "name": "Doctor",
+    "field": "Healthcare",
+    "salary": 150000,
+    "stat": "health",
+    "threshold": 85
+  },
+  {
+    "name": "Nurse",
+    "field": "Healthcare",
+    "salary": 75000,
+    "stat": "health",
+    "threshold": 60
+  },
+  {
+    "name": "Pharmacist",
+    "field": "Healthcare",
+    "salary": 120000,
+    "stat": "health",
+    "threshold": 75
+  },
+  {
+    "name": "Veterinarian",
+    "field": "Healthcare",
+    "salary": 100000,
+    "stat": "health",
+    "threshold": 70
+  },
+  {
+    "name": "Electrician",
+    "field": "Skilled Trades",
+    "salary": 65000,
+    "stat": "health",
+    "threshold": 55
+  },
+  {
+    "name": "Teacher",
+    "field": "Education",
+    "salary": 50000,
+    "stat": "happiness",
+    "threshold": 50
+  },
+  {
+    "name": "Sales Manager",
+    "field": "Sales",
+    "salary": 90000,
+    "stat": "happiness",
+    "threshold": 65
+  },
+  {
+    "name": "HR Manager",
+    "field": "Human Resources",
+    "salary": 80000,
+    "stat": "happiness",
+    "threshold": 60
+  },
+  {
+    "name": "Marketing Specialist",
+    "field": "Marketing",
+    "salary": 65000,
+    "stat": "happiness",
+    "threshold": 60
+  },
+  {
+    "name": "Project Manager",
+    "field": "Business",
+    "salary": 95000,
+    "stat": "happiness",
+    "threshold": 70
+  },
+  {
+    "name": "Architect",
+    "field": "Design",
+    "salary": 80000,
+    "stat": "looks",
+    "threshold": 78
+  },
+  {
+    "name": "Graphic Designer",
+    "field": "Design",
+    "salary": 60000,
+    "stat": "looks",
+    "threshold": 65
+  },
+  {
+    "name": "UX/UI Designer",
+    "field": "Design",
+    "salary": 72000,
+    "stat": "looks",
+    "threshold": 70
+  },
+  {
+    "name": "Chef",
+    "field": "Hospitality",
+    "salary": 50000,
+    "stat": "looks",
+    "threshold": 55
+  },
+  {
+    "name": "Hotel Manager",
+    "field": "Hospitality",
+    "salary": 95000,
+    "stat": "looks",
+    "threshold": 75
+  },
+  {
+    "name": "Social Media Manager",
+    "field": "Marketing",
+    "salary": 70000,
+    "stat": "looks",
+    "threshold": 60
+  },
+  {
+    "name": "Lawyer",
+    "field": "Law",
+    "salary": 130000,
+    "stat": "smarts",
+    "threshold": 80
+  },
+  {
+    "name": "Paralegal",
+    "field": "Law",
+    "salary": 50000,
+    "stat": "smarts",
+    "threshold": 65
+  },
+  {
+    "name": "Business Analyst",
+    "field": "Business",
+    "salary": 85000,
+    "stat": "smarts",
+    "threshold": 70
+  },
+  {
+    "name": "Accountant",
+    "field": "Finance",
+    "salary": 70000,
+    "stat": "smarts",
+    "threshold": 65
+  },
+  {
+    "name": "Web Developer",
+    "field": "Technology",
+    "salary": 75000,
+    "stat": "smarts",
+    "threshold": 65
+  },
+  {
+    "name": "Logistics Manager",
+    "field": "Operations",
+    "salary": 85000,
+    "stat": "happiness",
+    "threshold": 70
+  },
+  {
+    "name": "Event Planner",
+    "field": "Hospitality",
+    "salary": 60000,
+    "stat": "happiness",
+    "threshold": 60
+  },
+  {
+    "name": "Product Manager",
+    "field": "Technology",
+    "salary": 120000,
+    "stat": "smarts",
+    "threshold": 78
+  },
+  {
+    "name": "SEO Specialist",
+    "field": "Marketing",
+    "salary": 60000,
+    "stat": "smarts",
+    "threshold": 55
+  },
+  {
+    "name": "Pilot",
+    "field": "Aviation",
+    "salary": 120000,
+    "stat": "smarts",
+    "threshold": 75
+  },
+  {
+    "name": "Flight Attendant",
+    "field": "Aviation",
+    "salary": 50000,
+    "stat": "looks",
+    "threshold": 70
+  },
+  {
+    "name": "Police Officer",
+    "field": "Law Enforcement",
+    "salary": 60000,
+    "stat": "health",
+    "threshold": 65
+  },
+  {
+    "name": "Firefighter",
+    "field": "Emergency Services",
+    "salary": 55000,
+    "stat": "health",
+    "threshold": 70
+  },
+  {
+    "name": "Athlete",
+    "field": "Sports",
+    "salary": 50000,
+    "stat": "health",
+    "threshold": 80
+  },
+  {
+    "name": "Writer",
+    "field": "Arts",
+    "salary": 45000,
+    "stat": "smarts",
+    "threshold": 60
+  },
+  {
+    "name": "Journalist",
+    "field": "Media",
+    "salary": 50000,
+    "stat": "smarts",
+    "threshold": 65
+  },
+  {
+    "name": "Musician",
+    "field": "Arts",
+    "salary": 40000,
+    "stat": "happiness",
+    "threshold": 55
+  }
+]

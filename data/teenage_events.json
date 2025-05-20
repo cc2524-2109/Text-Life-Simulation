@@ -1,0 +1,572 @@
+[
+  {
+    "id": "Family Road Trip",
+    "description": "Your family decides to go on a road trip to a scenic destination.",
+    "conditions": {
+      "npc_needed": ["Parent", "Sibling"]
+    },
+    "options": [
+      {
+        "id": "Help with navigation",
+        "description": "You helped your parents navigate, keeping the trip on track.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "smarts", "value": 3 },
+              { "stat": "happiness", "value": 2 }
+            ]
+          },
+          {
+            "character": "Parent",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Annoy your sibling",
+        "description": "You spent the trip teasing your sibling. It was fun for you, but not for them.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 4 }
+            ]
+          },
+          {
+            "character": "Sibling",
+            "effects": [
+              { "stat": "relationship", "value": -3 },
+              { "stat": "petulance", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Adopt a Pet",
+    "description": "Your family visits an animal shelter to adopt a new pet.",
+    "conditions": {
+      "npc_needed": ["Parent", "New Pet"]
+    },
+    "options": [
+      {
+        "id": "Choose a playful puppy",
+        "description": "You picked an energetic puppy. It brought a lot of joy to the family.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 5 }
+            ]
+          },
+          {
+            "character": "Parent",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          },
+          {
+            "character": "New Pet",
+            "effects": [
+              { "stat": "relationship", "value": 3 },
+              { "stat": "happiness", "value": 5 },
+              { "stat": "craziness", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": ["Pet"]
+      },
+      {
+        "id": "Pick a calm cat",
+        "description": "You picked a quiet, affectionate cat. It was a soothing presence at home.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 3 }
+            ]
+          },
+          {
+            "character": "Parent",
+            "effects": [
+              { "stat": "relationship", "value": 1 }
+            ]
+          },
+          {
+            "character": "New Pet",
+            "effects": [
+              { "stat": "relationship", "value": 3 },
+              { "stat": "happiness", "value": 4 },
+              { "stat": "craziness", "value": -2 }
+            ]
+          }
+        ],
+        "npc_added": ["Pet"]
+      }
+    ]
+  },
+  {
+    "id": "Sibling Argument",
+    "description": "You and your sibling [Sibling] have an argument over who gets to use the TV.",
+    "conditions": {
+      "npc_needed": ["Sibling"]
+    },
+    "options": [
+      {
+        "id": "Let them win",
+        "description": "You decided to let your sibling have the TV. It kept the peace.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": -1 }
+            ]
+          },
+          {
+            "character": "Sibling",
+            "effects": [
+              { "stat": "relationship", "value": 3 },
+              { "stat": "petulance", "value": -2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Stand your ground",
+        "description": "You insisted on using the TV, even if it upset your sibling.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 2 }
+            ]
+          },
+          {
+            "character": "Sibling",
+            "effects": [
+              { "stat": "relationship", "value": -3 },
+              { "stat": "petulance", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Go on a Date",
+    "description": "You go on a date with your lover [Lover].",
+    "conditions": {
+      "npc_needed": ["Lover"]
+    },
+    "options": [
+      {
+        "id": "Plan a romantic picnic",
+        "description": "You planned a thoughtful picnic. Your lover appreciated the effort.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 6 }
+            ]
+          },
+          {
+            "character": "Lover",
+            "effects": [
+              { "stat": "relationship", "value": 4 },
+              { "stat": "craziness", "value": -1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Go to a movie",
+        "description": "You went to a movie together. It was a fun, lighthearted experience.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 5 }
+            ]
+          },
+          {
+            "character": "Lover",
+            "effects": [
+              { "stat": "relationship", "value": 3 },
+              { "stat": "craziness", "value": 1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Friend's Birthday Party",
+    "description": "You received an invite to celebrate with your friend [Friend].",
+    "conditions": {
+      "npc_needed": ["Friend"]
+    },
+    "options": [
+      {
+        "id": "Bring a thoughtful gift",
+        "description": "You brought a meaningful gift that made your friend smile.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 3 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 4 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Just show up",
+        "description": "You came to the party without a gift. Your friend appreciated your presence anyway.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 2 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+    {
+      "id": "Study for Exams",
+      "description": "Final exams are approaching. Do you want to study?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Study all night",
+          "description": "You stayed up all night studying. You feel confident but exhausted.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 10 },
+                { "stat": "health", "value": -3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Study for an hour",
+          "description": "You studied for a short time, balancing your focus with rest.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 5 },
+                { "stat": "health", "value": 1 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Go to a Party",
+      "description": "You got invited to a party. Do you want to go?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Go to the party",
+          "description": "You went to the party and had a blast, meeting new people and having fun.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 8 },
+                { "stat": "smarts", "value": 2 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Stay at home",
+          "description": "You decided to stay home and relax, feeling content with the quiet.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 3 },
+                { "stat": "health", "value": 1 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Hang Out with Friends",
+      "description": "You are hanging out with your friends. What do you want to do?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Play video games",
+          "description": "You spent hours playing video games with your friends, laughing and having fun.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 7 },
+                { "stat": "smarts", "value": 2 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Go to the mall",
+          "description": "You went to the mall with your friends, shopping and chatting about life.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 5 },
+                { "stat": "looks", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Have a Teenager Crisis",
+      "description": "You’re going through a rebellious phase. You start questioning everything.",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Rebel against authority",
+          "description": "You challenged authority and got into trouble. But it felt freeing in some way.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -5 },
+                { "stat": "health", "value": -2 },
+                { "stat": "smarts", "value": -1 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Question your identity",
+          "description": "You spent time reflecting and journaling about who you really are.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 5 },
+                { "stat": "happiness", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+      {
+        "id": "Fail an Important Test",
+        "description": "You failed a crucial test despite studying hard. It is a tough blow.",
+        "conditions": {
+          "npc_needed": []
+        },
+        "options": [
+          {
+            "id": "Feel defeated",
+            "description": "You wallow in self-pity for a while, feeling like a failure.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -10 },
+                  { "stat": "smarts", "value": -2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Try again",
+            "description": "You gather yourself and try to study more for the next exam, even though you are disappointed.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -5 },
+                  { "stat": "smarts", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Lose a Friendship",
+        "description": "You had an argument with your friend [Friend] and the relationship is now strained.",
+        "conditions": {
+          "npc_needed": ["Friend"]
+        },
+        "options": [
+          {
+            "id": "Apologize",
+            "description": "You try to apologize, and your friend reluctantly accepts your apology.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -7 }
+                ]
+              },
+              {
+                "character": "Friend",
+                "effects": [
+                  { "stat": "relationship", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Walk away",
+            "description": "You decide it is best to walk away and move on, but you feel regret.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -8 }
+                ]
+              },
+              {
+                "character": "Friend",
+                "effects": [
+                  { "stat": "relationship", "value": -20 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Get Sick",
+        "description": "You’ve caught a cold and feel miserable.",
+        "conditions": {
+          "npc_needed": []
+        },
+        "options": [
+          {
+            "id": "Stay in bed",
+            "description": "You decide to rest in bed all day, hoping to recover soon.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "health", "value": -10 },
+                  { "stat": "happiness", "value": -10 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Go to school anyway",
+            "description": "You push yourself to go to school despite being sick, making things worse in the long run.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "health", "value": -20 },
+                  { "stat": "happiness", "value": -10 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Get Grounded",
+        "description": "You broke the rules and got grounded by your parent [Parent] for the weekend.",
+        "conditions": {
+          "npc_needed": ["Parent"]
+        },
+        "options": [
+          {
+            "id": "Sulking",
+            "description": "You spend the weekend sulking in your room, feeling angry and frustrated.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -8 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Rebel",
+            "description": "You sneak out despite being grounded, but your actions only make things worse.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -10 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": -15 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      }
+    ]
+    
+  

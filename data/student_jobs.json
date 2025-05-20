@@ -1,0 +1,23 @@
+[
+{
+    "name": "Student",
+    "field": "",
+    "salary": 0,
+    "stat": "",
+    "threshold": 0
+  },
+  {
+    "name": "High School Student",
+    "field": "",
+    "salary": 0,
+    "stat": "",
+    "threshold": 0
+  },
+  {
+    "name": "College Student",
+    "field": "",
+    "salary": 0,
+    "stat": "",
+    "threshold": 0
+  }
+]

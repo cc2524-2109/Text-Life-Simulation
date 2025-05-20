@@ -1,0 +1,5 @@
+(test
+ (name test_Final_Project)
+ (modules activities_test character_test event_test option_test game_test test_Final_Project)
+ (deps (glob_files_rec ../data/*))
+ (libraries ounit2 yojson Final_Project))

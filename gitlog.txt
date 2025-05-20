@@ -1,0 +1,197 @@
+commit b7f13d868eb9067b091bee308bec02ff8b478693
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Sun Oct 27 22:53:22 2024 -0400
+
+    Demo Video Link Added
+
+commit ca78e58ca7f6ab9fef2fd2b10c1b771297c09bf1
+Merge: 2c2327a c234341
+Author: crl225 <crl225@cornell.edu>
+Date:   Sun Oct 27 17:05:38 2024 -0400
+
+    Merge branch 'game_test'
+
+commit 2c2327a3fd1e21806f6c4a90b374f54a0e9241e0
+Author: crl225 <crl225@cornell.edu>
+Date:   Sun Oct 27 11:18:39 2024 -0400
+
+    Fix errors
+    
+    - Changed event so that events.json is properly accessed
+    - Modified main so user can put in full name of option
+
+commit 2d7c5e6a51ad8f6b50ba28b3d22dcb7469d41dc0
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sun Oct 27 06:17:16 2024 -0400
+
+    Fix event test suite by adding a flagged event
+    
+    - Added the Marriage Anniversary event with flag requirement
+
+commit 4364921175723937c4c6fc839a976fef80868975
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sun Oct 27 06:14:37 2024 -0400
+
+    Implement flag-based event handling and improve user experience
+    
+    - Added try-except handling to main.ml for gracefully managing invalid user inputs.
+    - Added new events to events.json.
+    - Updated event.ml and event.mli:
+      - Added support for flags (`flag_condition`) in events.
+      - Added functions to parse and filter events based on player flags.
+    - Updated player.ml and player.mli:
+      - Added support for flags using a StringMap.
+      - Added functions to set, get, and remove player flags.
+    - Added `test_flag_conditions` to event_test.ml to ensure event flag conditions are correctly handled.
+
+commit b9adda874ff9be23eac03de28c3ee9e039e08101
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sun Oct 27 05:18:04 2024 -0400
+
+    Add new accessors to Player module, add new Player test suite, and refactor test suite structure
+    
+    - Added new accessor functions to player.ml and player.mli:
+      - `get_age`
+      - `get_name`
+      - `get_occupation`
+      - `get_location`
+    - New test suite for Player construction and stat modification
+    - Refactored test suite:
+      - Separated tests into `player_test.ml` and `event_test.ml` for modular testing.
+      - Updated `test_Final_Project.ml` to call both `Player_test` and `Event_test` suites.
+
+commit bb6a87fa77bbe7666265c9e5caeff9286dd9daac
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sun Oct 27 04:33:43 2024 -0400
+
+    Fix event loading function to use dynamic path
+    
+    - Updated `load_events` function in `event.ml` to take `unit` instead of a file path.
+    - Modified `event.mli` to reflect the updated signature of `load_events`.
+    - Updated all calls to `load_events` in `test/test_Final_Project.ml` and `event.ml` to use `()` instead of passing a file path.
+
+commit 508b05f225307eed8f187ff1184365c1b22f59d3
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sun Oct 27 04:06:53 2024 -0400
+
+    Implement event system and player improvements
+    
+    - Modified `main.ml` to add `updated_char_event` for handling character updates.
+    - Created `data/events.json` to store game events in JSON format.
+    - Added `event.ml` and `event.mli`:
+      - Implemented event loading, triggering, and effects.
+      - Added functions for accessing event attributes.
+    - Enhanced `player.ml` and `player.mli`:
+      - Added accessor functions (`get_happiness`, `get_health`, `get_smarts`, `get_looks`) for player levels.
+      - Created `create_player` function to instantiate players.
+      - Added `string_of_player` for readable player state output.
+    - Wrote test suite in `test_event.ml`:
+      - Verified event loading, effects, and random event triggering.
+      - Included detailed outputs for failed tests for improved debugging.
+
+commit 0114de65f16fc79ebc3ac23e639d160b9df0fd93
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Sat Oct 26 16:30:50 2024 -0400
+
+    install instructions
+
+commit e66793e687453d8a1914853acd4842cf8624f216
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Sat Oct 26 16:24:35 2024 -0400
+
+    YAML file
+
+commit f187277b52e2eff2165099a76e1e9fc6f0e2512e
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Sat Oct 26 16:10:39 2024 -0400
+
+    Poor-Health Implementation
+    
+    - Player dies when health reaches 0
+
+commit c2343419750cfafec8ad59b981b27ef71e2401a6
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Sat Oct 26 15:40:35 2024 -0400
+
+    Event Module Planning
+
+commit a459d1baee8c348008ebda3f1053712e0bb30cad
+Author: Cristina Lee <crl225@cornell.edu>
+Date:   Sat Oct 26 13:47:13 2024 -0400
+
+    Implement incomplete Game module
+    
+    - Changed player module to character to allow for npcs
+
+commit a3af08bc88e36762b557b67488f80a7df01628dd
+Author: cristinarubylee <cristinalee0723@gmail.com>
+Date:   Fri Oct 25 16:37:18 2024 -0400
+
+    Implement Player module
+    
+    - Created `player.ml` and `player.mli` files with full type and function definitions.
+    - Updated the driver function to use the `Player` module for character operations
+
+commit eee14e5c1b9a2ad9f65e43439999992138042c6a
+Author: crl225 <crl225@cornell.edu>
+Date:   Mon Oct 21 16:20:13 2024 -0400
+
+    Correct minor syntax errors in driver
+    
+    - Added unimplemented functions into character.ml
+    - Changed instances of to_string -> to_string_lst
+
+commit efd672e6a306b7f2ee6cd3936de55c2422630b9a
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Mon Oct 21 16:15:32 2024 -0400
+
+    Add Install.md
+
+commit 4db09e060db91dccb2e10b97bfc0d036fa449a42
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Mon Oct 21 15:39:05 2024 -0400
+
+    Implemented Driver Function
+    
+    - Briefly started driver and character.mli
+    - Assumptions made about character.mli
+
+commit f2b844c1e29d8788bb2715d97e4c63571b5ebebc
+Author: Kevin Gao <kg382@cornell.edu>
+Date:   Sat Oct 19 16:19:59 2024 -0400
+
+    Update README.md
+    
+    - Added team name
+
+commit 3df1cd6c27e03f795659dfb6632101a4623caab4
+Author: crl225 <crl225@cornell.edu>
+Date:   Tue Oct 8 18:48:01 2024 -0400
+
+    Update READ.md
+
+commit 2f2748dcc65d36176b1f6a1ec128e2c3b75da0e7
+Author: kg382 <kg382@cornell.edu>
+Date:   Tue Oct 8 18:45:18 2024 -0400
+
+    Update README.md
+
+commit 2b8b424af0c96f2846dac846165d2edcdf07fb94
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Mon Oct 7 21:18:31 2024 -0400
+
+    MS1 - First Commit
+    
+    - Include name
+
+commit 823b9ee86a994462baecc38cab052df1508c884e
+Author: cc2524 <cc2524@cornell.edu>
+Date:   Mon Oct 7 21:16:04 2024 -0400
+
+    Create README.md
+
+commit db07aca3374014993c45a707ed15de10fac90e9a
+Author: cc2524 <cc2524.cornell.edu>
+Date:   Mon Oct 7 21:13:24 2024 -0400
+
+    Initial commit

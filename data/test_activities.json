@@ -1,0 +1,53 @@
+ [
+  {
+    "name": "Tech Tasks",
+    "options": [
+      {
+        "name": "Code Review",
+        "accessed": false,
+        "effects": {
+          "stat": "Coding",
+          "value": 10,
+          "accessed_msg": "Reviewed",
+          "first_access_msg": "First Review"
+        }
+      },
+      {
+        "name": "Unit Testing",
+        "accessed": false,
+        "effects": {
+          "stat": "Quality Assurance",
+          "value": 15,
+          "accessed_msg": "Tested",
+          "first_access_msg": "First Testing"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Analytics Tasks",
+    "options": [
+      {
+        "name": "Data Cleaning",
+        "accessed": false,
+        "effects": {
+          "stat": "Data Analysis",
+          "value": 20,
+          "accessed_msg": "Cleaned",
+          "first_access_msg": "First Cleaning"
+        }
+      },
+      {
+        "name": "Data Visualization",
+        "accessed": false,
+        "effects": {
+          "stat": "Data Presentation",
+          "value": 25,
+          "accessed_msg": "Visualized",
+          "first_access_msg": "First Visualization"
+        }
+      }
+    ]
+  }
+]
+

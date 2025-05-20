@@ -1,0 +1,66 @@
+[{
+    "name": "Pet Interactions",
+    "options": [
+      {
+        "name": "Pet",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 4,
+          "accessed_msg": "Your pet enjoys the attention but needs a break now!",
+          "first_access_msg": "You gently pet your furry friend. They seem delighted!"
+        }
+      },
+      {
+        "name": "Feed",
+        "accessed": false,
+        "effects": {
+          "stat": "Health",
+          "value": 5,
+          "accessed_msg": "Your pet is already full. Don’t overfeed them!",
+          "first_access_msg": "You give your pet some food. They eat happily, wagging their tail!"
+        }
+      },
+      {
+        "name": "Play",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 6,
+          "accessed_msg": "Your pet is tired from playing. Let them rest!",
+          "first_access_msg": "You played with your pet. Their tail wagged furiously with joy!"
+        }
+      },
+      {
+        "name": "Train",
+        "accessed": false,
+        "effects": {
+          "stat": "Smarts",
+          "value": 4,
+          "accessed_msg": "Your pet needs a break from training. Keep sessions short and fun!",
+          "first_access_msg": "You worked on a new trick with your pet. They’re slowly getting the hang of it!"
+        }
+      },
+      {
+        "name": "Walk",
+        "accessed": false,
+        "effects": {
+          "stat": "Health",
+          "value": 5,
+          "accessed_msg": "Your pet is still recovering from the last walk. Let them rest!",
+          "first_access_msg": "You went on a walk with your pet. They sniffed everything and seemed thrilled!"
+        }
+      },
+      {
+        "name": "Ignore",
+        "accessed": false,
+        "effects": {
+          "stat": "Relationship",
+          "value": -3,
+          "accessed_msg": "Your pet already feels ignored. Show them some love!",
+          "first_access_msg": "You ignored your pet for a while. They seemed a little sad."
+        }
+      }
+    ]
+  }]
+  

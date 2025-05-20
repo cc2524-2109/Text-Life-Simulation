@@ -1,0 +1,881 @@
+[
+  {
+    "id": "Wedding Invitation",
+    "description": "Your friend [Friend] invited you to their wedding. Will you attend or skip it?",
+    "conditions": {
+      "npc_needed": ["Friend"]
+    },
+    "options": [
+      {
+        "id": "Attend the wedding",
+        "description": "You attended the wedding and had a wonderful time. Your bond grew stronger.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 10 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 15 },
+              { "stat": "craziness", "value": 5 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Skip the wedding",
+        "description": "You decided not to attend. Your friend was disappointed.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": -5 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": -10 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+    {
+      "id": "Housewarming Party",
+      "description": "Your friend [Friend] invited you to their housewarming party. Will you attend?",
+      "conditions": {
+        "npc_needed": ["Friend"]
+      },
+      "options": [
+        {
+          "id": "Attend the party",
+          "description": "You attended the party and enjoyed catching up with your friend.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 7 }
+              ]
+            },
+            {
+              "character": "Friend",
+              "effects": [
+                { "stat": "relationship", "value": 10 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Skip the party",
+          "description": "You chose not to attend, and your friend seemed hurt by your absence.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -3 }
+              ]
+            },
+            {
+              "character": "Friend",
+              "effects": [
+                { "stat": "relationship", "value": -5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Sibling Argument",
+      "description": "You and your sibling [Sibling] had a disagreement over a trivial matter. How will you handle it?",
+      "conditions": {
+        "npc_needed": ["Sibling"]
+      },
+      "options": [
+        {
+          "id": "Apologize",
+          "description": "You apologized and resolved the conflict amicably.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 5 }
+              ]
+            },
+            {
+              "character": "Sibling",
+              "effects": [
+                { "stat": "relationship", "value": 7 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Ignore it",
+          "description": "You decided not to address the issue, and the tension remained.",
+          "character_effects": [
+            {
+              "character": "Sibling",
+              "effects": [
+                { "stat": "relationship", "value": -5 },
+                { "stat": "petulance", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Anniversary Celebration",
+      "description": "Your partner [Lover] wants to celebrate your anniversary in a special way. Will you make it memorable or keep it simple?",
+      "conditions": {
+        "npc_needed": ["Lover"]
+      },
+      "options": [
+        {
+          "id": "Plan a special evening",
+          "description": "You organized a thoughtful celebration, and your partner appreciated your effort.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 10 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": 15 },
+                { "stat": "craziness", "value": -5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Keep it simple",
+          "description": "You decided on a low-key celebration, which your partner found underwhelming.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 5 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": -5 },
+                { "stat": "craziness", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Pet Adoption",
+      "description": "You came across an adorable pet in need of a home. Will you adopt it?",
+      "conditions": {
+        "npc_needed": ["New Pet"]
+      },
+      "options": [
+        {
+          "id": "Adopt the pet",
+          "description": "You adopted the pet, bringing joy into your life.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 15 }
+              ]
+            }
+          ],
+          "npc_added": ["Pet"]
+        },
+        {
+          "id": "Walk away",
+          "description": "You decided not to adopt, leaving the pet behind.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -5 }
+              ]
+            }
+          ],
+          "npc_added": [],
+          "changed_flags": []
+        }
+      ]
+    },
+    {
+      "id": "Parental Advice",
+      "description": "Your parent [Parent] is giving you unsolicited advice on your personal life. How will you respond?",
+      "conditions": {
+        "npc_needed": ["Parent"]
+      },
+      "options": [
+        {
+          "id": "Listen patiently",
+          "description": "You listened to your parent's advice, strengthening your bond.",
+          "character_effects": [
+            {
+              "character": "Parent",
+              "effects": [
+                { "stat": "relationship", "value": 10 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Push back",
+          "description": "You expressed your frustration, which led to some tension.",
+          "character_effects": [
+            {
+              "character": "Parent",
+              "effects": [
+                { "stat": "relationship", "value": -5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Caught Red-Handed",
+      "description": "Your lover [Lover 1] has just found out about your other lover [Lover 2]. How will you respond?",
+      "conditions": {
+        "npc_needed": ["Lover 1", "Lover 2"],
+        "player_levels": []
+      },
+      "options": [
+        {
+          "id": "Say that you love them both",
+          "description": "You admitted to loving them both, hoping they would understand. Things got messy.",
+          "character_effects": [
+            {
+              "character": "Lover 1",
+              "effects": [
+                { "stat": "relationship", "value": -50 },
+                { "stat": "craziness", "value": 30 }
+              ]
+            },
+            {
+              "character": "Lover 2",
+              "effects": [
+                { "stat": "relationship", "value": -30 },
+                { "stat": "craziness", "value": 20 }
+              ]
+            },
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -20 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Deny everything",
+          "description": "You denied the accusations and tried to calm things down. It only made things worse.",
+          "character_effects": [
+            {
+              "character": "Lover 1",
+              "effects": [
+                { "stat": "relationship", "value": -70 },
+                { "stat": "craziness", "value": 40 }
+              ]
+            },
+            {
+              "character": "Lover 2",
+              "effects": [
+                { "stat": "relationship", "value": -40 },
+                { "stat": "craziness", "value": 30 }
+              ]
+            },
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -30 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Say nothing",
+          "description": "You stayed quiet while they demanded answers. The silence made them even angrier.",
+          "character_effects": [
+            {
+              "character": "Lover 1",
+              "effects": [
+                { "stat": "relationship", "value": -100 },
+                { "stat": "craziness", "value": 50 }
+              ]
+            },
+            {
+              "character": "Lover 2",
+              "effects": [
+                { "stat": "relationship", "value": -100 },
+                { "stat": "craziness", "value": 50 }
+              ]
+            },
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -50 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "New Family Member",
+      "description": "Your lover [Lover] wants to have a child. How do you respond?",
+      "conditions": {
+        "npc_needed": ["Lover", "New Child"]
+      },
+      "options": [
+        {
+          "id": "Have a child",
+          "description": "You both tried for a child, and soon your efforts paid off. You are expecting a baby, and it brings a new sense of purpose to your life.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 10 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "craziness", "value": -3 },
+                { "stat": "relationship", "value": 7 }
+              ]
+            },
+            {
+              "character": "New Child",
+              "effects": [
+                { "stat": "relationship", "value": 10 },
+                { "stat": "health", "value": 5 },
+                { "stat": "smarts", "value": 5 },
+                { "stat": "looks", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": ["Child"]
+        },
+        {
+          "id": "Wait before having a child",
+          "description": "You both decided to wait a little longer before having a child, feeling uncertain about timing but still hopeful about the future.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 3 },
+                {"stat": "smarts", "value": 3}
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "happiness", "value": -4 },
+                { "stat": "relationship", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Sibling's Wedding",
+      "description": "Your sibling [Sibling] is getting married, and you are invited to be a part of the special day.",
+      "conditions": {
+        "npc_needed": ["Sibling"]
+      },
+      "options": [
+        {
+          "id": "Support your sibling",
+          "description": "You offer heartfelt words and assistance to your sibling during the ceremony. Their relationship with you strengthens.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 5 }
+              ]
+            },
+            {
+              "character": "Sibling",
+              "effects": [
+                { "stat": "relationship", "value": 12 },
+                { "stat": "petulance", "value": -4 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Distance yourself",
+          "description": "You feel some resentment about the wedding and don't engage much. The tension between you and your sibling worsens.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -8 }
+              ]
+            },
+            {
+              "character": "Sibling",
+              "effects": [
+                { "stat": "relationship", "value": -10 },
+                { "stat": "petulance", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Taking a Family Trip",
+      "description": "You and your family go on a vacation together. It is a bonding experience, but some unexpected traffic cause stress along the way.",
+      "conditions": {
+        "npc_needed": ["Lover", "Child"]
+      },
+      "options": [
+        {
+          "id": "Make the best of it",
+          "description": "Despite the hiccups, you make the most of the trip, ensuring everyone has fun and enjoys the time together.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 8 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": 5 },
+                { "stat": "craziness", "value": -2 }
+              ]
+            },
+            {
+              "character": "Child",
+              "effects": [
+                { "stat": "relationship", "value": 4 },
+                { "stat": "health", "value": 2 },
+                { "stat": "smarts", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Let the stress take over",
+          "description": "The traffic lead to more stress than anticipated, and you struggle to enjoy the trip, affecting the mood of everyone.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -6 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": -5 },
+                { "stat": "craziness", "value": 4 }
+              ]
+            },
+            {
+              "character": "Child",
+              "effects": [
+                { "stat": "relationship", "value": -6 },
+                { "stat": "health", "value": -3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+      {
+        "id": "Weekend Exercise",
+        "description": "You and your sibling [Sibling] are considering a weekend activity together. Will you try a new exercise routine or just relax at home?",
+        "conditions": {
+          "npc_needed": ["Sibling"]
+        },
+        "options": [
+          {
+            "id": "Try the exercise routine",
+            "description": "You both tried a new exercise routine. It was challenging but fun.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "health", "value": 5 }
+                ]
+              },
+              {
+                "character": "Sibling",
+                "effects": [
+                  { "stat": "relationship", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Relax at home",
+            "description": "You decided to stay in and enjoy a quiet day. It was nice but uneventful.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 2 }
+                ]
+              },
+              {
+                "character": "Sibling",
+                "effects": [
+                  { "stat": "happiness", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Family Gathering",
+        "description": "Your parent [Parent] invited you to a small family gathering. Will you go?",
+        "conditions": {
+          "npc_needed": ["Parent"]
+        },
+        "options": [
+          {
+            "id": "Attend the gathering",
+            "description": "You attended the family gathering. It was a calm and pleasant time with everyone.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 3 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Skip the gathering",
+            "description": "You decided to skip the gathering. It wasn't a big deal, but your parent seemed slightly disappointed.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -1 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": -2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Lover's Advice",
+        "description": "Your partner [Lover] gives you some advice about how to improve your routine. Will you take it?",
+        "conditions": {
+          "npc_needed": ["Lover"]
+        },
+        "options": [
+          {
+            "id": "Take the advice",
+            "description": "You decided to take your partner's advice and implement it. It was easy enough to try.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "smarts", "value": 2 }
+                ]
+              },
+              {
+                "character": "Lover",
+                "effects": [
+                  { "stat": "relationship", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Decline the advice",
+            "description": "You chose not to take your partner's advice. There was no major issue, but it was a mild letdown for them.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": -1 }
+                ]
+              },
+              {
+                "character": "Lover",
+                "effects": [
+                  { "stat": "relationship", "value": -2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Pet Care",
+        "description": "Your pet [Pet] seems to be in a playful mood. Will you spend time playing with it, or let it entertain itself?",
+        "conditions": {
+          "npc_needed": ["Pet"]
+        },
+        "options": [
+          {
+            "id": "Play with the pet",
+            "description": "You played with your pet for a while. It seemed to enjoy the interaction, and you felt good afterward.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 5 }
+                ]
+              },
+              {
+                "character": "Pet",
+                "effects": [
+                  { "stat": "happiness", "value": 7 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Let the pet entertain itself",
+            "description": "You let your pet do its own thing for the day. It was fine, but nothing special happened.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 1 }
+                ]
+              },
+              {
+                "character": "Pet",
+                "effects": [
+                  { "stat": "happiness", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Sibling Visit",
+        "description": "Your sibling [Sibling] is visiting your place for the weekend. Will you spend time together or do your own thing?",
+        "conditions": {
+          "npc_needed": ["Sibling"]
+        },
+        "options": [
+          {
+            "id": "Spend time together",
+            "description": "You spent the weekend hanging out with your sibling. It was fun but low-key.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 4 }
+                ]
+              },
+              {
+                "character": "Sibling",
+                "effects": [
+                  { "stat": "relationship", "value": 4 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Do your own thing",
+            "description": "You decided to do your own thing over the weekend. Your sibling seemed fine, but there was no real bonding.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 1 }
+                ]
+              },
+              {
+                "character": "Sibling",
+                "effects": [
+                  { "stat": "relationship", "value": -1 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+    {
+      "id": "Relationship Breakdown",
+      "description": "You and your lover [Lover] have been arguing more frequently, and things feel strained.",
+      "conditions": {
+        "npc_needed": ["Lover"]
+      },
+      "options": [
+        {
+          "id": "Seek therapy",
+          "description": "You suggest couples therapy in hopes of resolving the issues, but the emotional strain is still there.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -8 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": -8 },
+                { "stat": "craziness", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Ignore the problem",
+          "description": "You avoid addressing the issues, hoping they'll resolve themselves, but it only makes things worse.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -15 }
+              ]
+            },
+            {
+              "character": "Lover",
+              "effects": [
+                { "stat": "relationship", "value": -15 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Midlife Crisis",
+      "description": "You begin questioning your life choices as you approach a milestone birthday, feeling unsure about the future.",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Get a new hair style",
+          "description": "You impulsively dye your hair platinum blonde. It doesn't look great on you, but you feel pretty cool.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 10 },
+                { "stat": "looks", "value": -10 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Start a new hobby",
+          "description": "You pick up a new hobby, hoping it will give your life more purpose, but it doesn't completely satisfy you.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -6 },
+                { "stat": "smarts", "value": 10 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Health Scare",
+      "description": "You received some worrying news from a doctor about your health, and you're unsure of the outcome.",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Obsess over it",
+          "description": "You begin obsessing over the possibility of a serious illness, making yourself more anxious and stressed.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -15 },
+                { "stat": "health", "value": -8 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Seek a second opinion",
+          "description": "You get a second opinion from another doctor, which brings some relief, but you're still worried.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": -7 },
+                { "stat": "health", "value": -4 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    }
+  ]
+  
+

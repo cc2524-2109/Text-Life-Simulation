@@ -1,0 +1,32 @@
+---
+# Members of your group.
+group:
+  - name: Connie Chen
+    netid: cc2524
+  - name: Cristina Lee
+    netid: crl225
+  - name: Kevin Gao
+    netid: kg382
+# Your PM.
+pm:
+  name: Hubert He
+  netid: hmh92
+# Set to false if you don't want your gallery entry to be public.
+publish: true
+# Pithy title
+title: "Unit(Life)"
+# OK if this is a Cornell Github link, but public gallery viewers won't be able to see it.
+git-repo: "https://github.coecis.cornell.edu/cc2524/Final-Project"
+# Replace the URL with your own demo video.
+demo-video-url: "https://youtu.be/pu22NYmKIgE"
+# Write a short, attention-grabbing description of your project.
+desc: >
+  This project simulates the life progression of a character from birth to old age, 
+  similar to games like BitLife and The Sims. The interface allows the user to make 
+  choices at various stages of life, influencing the character’s education, career, 
+  relationships, financial management and health. The user will interact with the 
+  simulation through a series of menus and prompts, making decisions that shape the 
+  character’s life path. The simulation will include random events and challenges that 
+  the user must navigate. We might also include mini-games within the games that the 
+  character can play to gain rewards (increased happiness, money, etc). 
+  

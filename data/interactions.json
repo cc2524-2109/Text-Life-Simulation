@@ -1,0 +1,66 @@
+[{
+  "name": "Social Interactions",
+  "options": [
+    {
+      "name": "Chat",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": 3,
+        "accessed_msg": "Let's enjoy some alone time, for both you and them!",
+        "first_access_msg": "You guys had an enjoyable chat!"
+      }
+    },
+    {
+      "name": "Compliment",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": 5,
+        "accessed_msg": "Let's do so in moderation. Make sure the compliments are sincere!",
+        "first_access_msg": "You say something nice. They thanked you for your compliment!"
+      }
+    },
+    {
+      "name": "Share a Joke",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": 5,
+        "accessed_msg": "You've run out of jokes to tell!",
+        "first_access_msg": "They enjoyed your joke. You lighten the mood with humor!"
+      }
+    },
+    {
+      "name": "Ask for Advice",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": 3,
+        "accessed_msg": "You already received a lot of advice from them!",
+        "first_access_msg": "You seek guidance from them. They were happy that you trusted their opinion!"
+      }
+    },
+    {
+      "name": "Gossip",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": 5,
+        "accessed_msg": "You already shared all the gossip you know!",
+        "first_access_msg": "You share some interesting news/rumors. They also found the gossip amusing!"
+      }
+    },
+    {
+      "name": "Confront",
+      "accessed": false,
+      "effects": {
+        "stat": "Relationship",
+        "value": -5,
+        "accessed_msg": "You've already confronted them recently. Let's give you both some time!",
+        "first_access_msg": "You address a disagreement or issue!"
+      }
+    }
+  ]
+}
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "id": "Throw a Tantrum",
+    "description": "You started crying and flailing your arms for no reason.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Cry harder",
+        "description": "You cried even louder, letting the whole world know you’re upset. At least you were able to calm down afterwards.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 5 },
+              { "stat": "health", "value": -1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Stop crying",
+        "description": "You calmed down after a while and felt better. It was a relief to finally relax.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 10 },
+              { "stat": "health", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Play with a Toy",
+    "description": "You found a random toy and decided to play with it.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Shake the toy",
+        "description": "You shook the toy enthusiastically, creating lots of noise. It was quite fun.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 8 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Chew on the toy",
+        "description": "You chewed on the toy to see how it tasted. It was an interesting experience.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "health", "value": -2 },
+              { "stat": "happiness", "value": 5 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Discovering Hands",
+    "description": "You noticed your hands and started playing with them.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Clap your hands",
+        "description": "You clapped your hands together and giggled with joy. It was a delightful moment.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 10 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Wave your hands",
+        "description": "You waved your hands around, amused by their movement. It was quite entertaining.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 7 },
+              { "stat": "health", "value": 1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Crawl Around",
+    "description": "You started crawling around the room, exploring your surroundings.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Chase a ball",
+        "description": "You crawled after a ball rolling across the floor, feeling determined. It was a fun chase.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 8 },
+              { "stat": "health", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Crawl under a table",
+        "description": "You crawled under a table and got stuck for a bit. It was a bit frustrating but you learned something.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "smarts", "value": 2 },
+              { "stat": "happiness", "value": -3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Baby Exploration",
+    "description": "You picked up something from the floor and decided to taste it.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Taste a shoe",
+        "description": "You tasted a shoe. It wasn’t very pleasant, but it was a learning experience.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "health", "value": -3 },
+              { "stat": "smarts", "value": 1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Taste a blanket",
+        "description": "You nibbled on a soft blanket. It was comforting and soothing.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 6 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Make Baby Sounds",
+    "description": "You started babbling and making random baby noises.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Say 'Goo Goo'",
+        "description": "You said 'Goo Goo' repeatedly, getting everyone’s attention. It was quite amusing.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 10 },
+              { "stat": "smarts", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Blow raspberries",
+        "description": "You blew raspberries, amused by the sound. It was a lot of fun.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 8 },
+              { "stat": "health", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  }
+]

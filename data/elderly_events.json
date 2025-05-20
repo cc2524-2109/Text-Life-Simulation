@@ -1,0 +1,315 @@
+[{
+    "id": "Adopt a Senior Pet",
+    "description": "A shelter nearby is looking for homes for senior pets. Will you take one in?",
+    "conditions": {
+      "npc_needed": ["Pet"]
+    },
+    "options": [
+      {
+        "id": "Adopt the pet",
+        "description": "You adopted a senior pet. It brought joy to your life, but caring for it is challenging.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 15 }
+            ]
+          },
+          {
+            "character": "Pet",
+            "effects": [
+              { "stat": "relationship", "value": 10 },
+              { "stat": "health", "value": -5 }
+            ]
+          }
+        ],
+        "npc_added": ["Pet"],
+        "changed_flags": []
+      },
+      {
+        "id": "Decline",
+        "description": "You decided not to adopt. You feel a bit guilty but maintained your resources.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": -5 }
+            ]
+          }
+        ],
+        "npc_added": [],
+        "changed_flags": []
+      }
+    ]
+  },
+  {
+    "id": "Reconnect with Old Friend",
+    "description": "Your old friend [Friend] reached out to reconnect. Will you meet up with them?",
+    "conditions": {
+      "npc_needed": ["Friend"]
+    },
+    "options": [
+      {
+        "id": "Meet for coffee",
+        "description": "You spent a wonderful afternoon reminiscing about old times.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 12 },
+              { "stat": "health", "value": 2 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 10 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Politely decline",
+        "description": "You chose not to reconnect, leaving you with mixed feelings.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": -5 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": -3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+    {
+      "id": "Read a New Book",
+      "description": "You picked up a book from the library. Will you take time to read it?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Read the book",
+          "description": "You spent the afternoon reading, enjoying the story and learning something new.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 5 },
+                { "stat": "happiness", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Set the book aside",
+          "description": "You decided to save the book for another day and relaxed instead.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 2 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Attend a Class",
+      "description": "A community center is offering free workshops. Will you join one?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Join the class",
+          "description": "You attended a workshop and gained some new knowledge.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 7 },
+                { "stat": "happiness", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Skip the class",
+          "description": "You decided not to attend and used the time to rest instead.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "health", "value": 2 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Update Your Wardrobe",
+      "description": "You noticed some of your clothes are outdated. Will you go shopping for something new?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Buy new clothes",
+          "description": "You refreshed your wardrobe and felt more confident.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "looks", "value": 5 },
+                { "stat": "happiness", "value": 4 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Stick with what you have",
+          "description": "You chose to keep your current clothes and saved your money.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Solve a Puzzle",
+      "description": "You came across a crossword puzzle in the newspaper. Will you give it a try?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Solve the puzzle",
+          "description": "You completed the crossword puzzle, feeling accomplished.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 6 },
+                { "stat": "happiness", "value": 4 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Leave it unfinished",
+          "description": "You decided not to finish the puzzle and moved on to something else.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 2 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Try a New Hairstyle",
+      "description": "A stylist suggested a new haircut. Will you try it?",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": [
+        {
+          "id": "Try the new style",
+          "description": "You went for a new look and enjoyed the change.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "looks", "value": 7 },
+                { "stat": "happiness", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Stick with the usual",
+          "description": "You chose to keep your current hairstyle and felt comfortable with your decision.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 4 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    },
+    {
+      "id": "Participate in Trivia Night",
+      "description": "Your friend [Friend] is hosting a trivia night. Will you join in?",
+      "conditions": {
+        "npc_needed": ["Friend"]
+      },
+      "options": [
+        {
+          "id": "Join the trivia",
+          "description": "You joined the trivia night and enjoyed testing your knowledge.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "smarts", "value": 8 },
+                { "stat": "happiness", "value": 6 }
+              ]
+            },
+            {
+              "character": "Friend",
+              "effects": [
+                { "stat": "relationship", "value": 5 }
+              ]
+            }
+          ],
+          "npc_added": []
+        },
+        {
+          "id": "Skip the trivia",
+          "description": "You decided not to participate and spent the evening relaxing instead.",
+          "character_effects": [
+            {
+              "character": "Player",
+              "effects": [
+                { "stat": "happiness", "value": 3 }
+              ]
+            }
+          ],
+          "npc_added": []
+        }
+      ]
+    }
+  ]

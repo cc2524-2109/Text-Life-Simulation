@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Software Engineer",
+    "field": "Tech",
+    "salary": 100000,
+    "stat": "Coding",
+    "threshold": 50
+  },
+  {
+    "name": "Data Scientist",
+    "field": "Analytics",
+    "salary": 120000,
+    "stat": "Data Analysis",
+    "threshold": 60
+  }
+]
+  

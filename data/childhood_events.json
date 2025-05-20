@@ -1,0 +1,706 @@
+[
+  {
+    "id": "Ride a Bike",
+    "description": "You learned how to ride a bike for the first time.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Ride with training wheels",
+        "description": "You used training wheels to get more comfortable on the bike. It was a steady start.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 6 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Try without training wheels",
+        "description": "You tried riding without training wheels and had some wobbly moments. It was a bit challenging.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 6 },
+              { "stat": "health", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Build a Fort",
+    "description": "You and your friend [Friend] decided to build a fort with pillows and blankets.",
+    "conditions": {
+      "npc_needed": ["Friend"]
+    },
+    "options": [
+      {
+        "id": "Build a simple fort",
+        "description": "You worked together to build a small fort. It was cozy and fun.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 8 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Make a complex fort",
+        "description": "You tried to make a big, complex fort, but it was tricky to keep it stable. It was a learning experience.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 7 },
+              { "stat": "smarts", "value": 3 }
+            ]
+          },
+          {
+            "character": "Friend",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "School Talent Show",
+    "description": "You signed up to perform in your school talent show.",
+    "conditions": {
+      "npc_needed": []
+    },
+    "options": [
+      {
+        "id": "Perform a solo act",
+        "description": "You decided to perform a solo act, showing off your skills. It was a proud moment.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 10 },
+              { "stat": "smarts", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Join a group performance",
+        "description": "You joined a group performance and enjoyed working as a team. It was a great experience.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 9 },
+              { "stat": "health", "value": 1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Sleepover with a New Friend",
+    "description": "Your new friend [New Friend] invited you to a sleepover!",
+    "conditions": {
+      "npc_needed": ["New Friend"]
+    },
+    "options": [
+      {
+        "id": "Play board games",
+        "description": "You and your new friend played board games late into the night. It was a lot of fun.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 8 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          },
+          {
+            "character": "New Friend",
+            "effects": [
+              { "stat": "relationship", "value": 3 }
+            ]
+          }
+        ],
+        "npc_added": ["Friend"]
+      },
+      {
+        "id": "Tell scary stories",
+        "description": "You and your new friend told scary stories, which made you both laugh and shiver. It was a memorable night.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 7 },
+              { "stat": "health", "value": -1 }
+            ]
+          },
+          {
+            "character": "New Friend",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": ["Friend"]
+      }
+    ]
+  },
+  {
+    "id": "Pet a Dog",
+    "description": "You met a friendly dog with your parent [Parent] at the park.",
+    "conditions": {
+      "npc_needed": ["Parent"]
+    },
+    "options": [
+      {
+        "id": "Ask your parent first",
+        "description": "You asked your parent for permission before petting the dog. It was a responsible choice.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 7 },
+              { "stat": "smarts", "value": 2 }
+            ]
+          },
+          {
+            "character": "Parent",
+            "effects": [
+              { "stat": "relationship", "value": 2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Pet the dog immediately",
+        "description": "You excitedly pet the dog without asking, and it wagged its tail happily. It was a joyful moment.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 9 },
+              { "stat": "smarts", "value": 1 }
+            ]
+          },
+          {
+            "character": "Parent",
+            "effects": [
+              { "stat": "relationship", "value": -1 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+  },
+  {
+    "id": "Sibling Prank",
+    "description": "Your sibling [Sibling] plays a prank on you. Do you laugh it off or retaliate?",
+    "conditions": {
+      "npc_needed": ["Sibling"]
+    },
+    "options": [
+      {
+        "id": "Laugh it off",
+        "description": "You decided to laugh it off. Your sibling appreciated your good humor. It was a light-hearted moment.",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": 3 }
+            ]
+          },
+          {
+            "character": "Sibling",
+            "effects": [
+              { "stat": "relationship", "value": 5 },
+              { "stat": "petulance", "value": -2 }
+            ]
+          }
+        ],
+        "npc_added": []
+      },
+      {
+        "id": "Retaliate",
+        "description": "You pranked them back! It turned into a prank war, and both of you ended up in trouble. Your sibling will remember that...",
+        "character_effects": [
+          {
+            "character": "Player",
+            "effects": [
+              { "stat": "happiness", "value": -2 }
+            ]
+          },
+          {
+            "character": "Sibling",
+            "effects": [
+              { "stat": "relationship", "value": -10 },
+              { "stat": "petulance", "value": 5 }
+            ]
+          }
+        ],
+        "npc_added": []
+      }
+    ]
+    },
+      {
+        "id": "Dress-Up Day",
+        "description": "It's Dress-Up Day at school! You have the chance to put together a creative outfit.",
+        "conditions": {
+          "npc_needed": []
+        },
+        "options": [
+          {
+            "id": "Make a creative costume",
+            "description": "You crafted an imaginative costume with items from around the house. Everyone loved it!",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 8 },
+                  { "stat": "smarts", "value": 3 },
+                  { "stat": "looks", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Choose a simple outfit",
+            "description": "You wore something simple but stylish. You felt comfortable and confident.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 6 },
+                  { "stat": "looks", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Math Competition",
+        "description": "Your teacher signed you up for a math competition. Are you ready to show your skills?",
+        "conditions": {
+          "npc_needed": []
+        },
+        "options": [
+          {
+            "id": "Prepare thoroughly",
+            "description": "You practiced hard and felt confident going into the competition. Your efforts paid off.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 7 },
+                  { "stat": "smarts", "value": 5 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Wing it",
+            "description": "You decided to rely on your natural math skills. It was fun but a bit stressful.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 5 },
+                  { "stat": "smarts", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Haircut Adventure",
+        "description": "Your parent [Parent] took you for a new haircut, and it turned into quite an experience!",
+        "conditions": {
+          "npc_needed": ["Parent"]
+        },
+        "options": [
+          {
+            "id": "Choose a bold style",
+            "description": "You chose a bold new style that made you stand out.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 6 },
+                  { "stat": "looks", "value": 4 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Stick with a classic look",
+            "description": "You opted for a classic haircut that felt safe and familiar.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 5 },
+                  { "stat": "looks", "value": 2 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Science Fair",
+        "description": "Your school is hosting a science fair, and you have the chance to create an amazing project.",
+        "conditions": {
+          "npc_needed": []
+        },
+        "options": [
+          {
+            "id": "Create an intricate project",
+            "description": "You designed a detailed project that impressed everyone at the fair.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 9 },
+                  { "stat": "smarts", "value": 6 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Go for something simple",
+            "description": "You presented a straightforward project and felt proud of your work.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 7 },
+                  { "stat": "smarts", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+      {
+        "id": "Family Photo Day",
+        "description": "Your family decided to take professional photos. You had to get ready to look your best.",
+        "conditions": {
+          "npc_needed": ["Parent"]
+        },
+        "options": [
+          {
+            "id": "Dress to impress",
+            "description": "You dressed up in your best outfit and smiled brightly for the camera.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 7 },
+                  { "stat": "looks", "value": 5 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": 3 }
+                ]
+              }
+            ],
+            "npc_added": []
+          },
+          {
+            "id": "Keep it casual",
+            "description": "You chose a casual outfit and focused on enjoying the moment.",
+            "character_effects": [
+              {
+                "character": "Player",
+                "effects": [
+                  { "stat": "happiness", "value": 6 },
+                  { "stat": "looks", "value": 2 }
+                ]
+              },
+              {
+                "character": "Parent",
+                "effects": [
+                  { "stat": "relationship", "value": 2 }
+                ]
+              }
+            ],
+            "npc_added": []
+          }
+        ]
+      },
+        {
+          "id": "Doodle on the Wall",
+          "description": "You found some crayons and decided to draw a masterpiece on the living room wall.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Apologize and clean up",
+              "description": "You apologized when your parents saw the doodles and helped clean up. A lesson learned!",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "smarts", "value": 2 },
+                    { "stat": "looks", "value": -1 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Run and hide",
+              "description": "You ran and hid, but they found you. You got scolded for the mess.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "smarts", "value": -1 },
+                    { "stat": "happiness", "value": -3 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        },
+        {
+          "id": "Cut Your Own Hair",
+          "description": "You got curious and tried to cut your own hair. The result was... interesting.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Laugh it off",
+              "description": "You laughed it off and embraced the new look. Everyone thought it was charming.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": 5 },
+                    { "stat": "looks", "value": -3 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Hide your haircut",
+              "description": "You tried to hide the uneven cut, but everyone noticed anyway. It was embarrassing.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": -4 },
+                    { "stat": "looks", "value": -2 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        },
+        {
+          "id": "Struggle with Homework",
+          "description": "You had trouble understanding your homework and felt frustrated.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Ask for help",
+              "description": "You asked a parent or teacher for help and learned something new.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "smarts", "value": 4 },
+                    { "stat": "happiness", "value": 2 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Give up",
+              "description": "You gave up and didn't finish the homework. It left you feeling defeated.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "smarts", "value": -3 },
+                    { "stat": "happiness", "value": -5 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        },
+        {
+          "id": "Slip and Fall",
+          "description": "You slipped and fell while playing outside, scraping your knee.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Get up and keep playing",
+              "description": "You dusted yourself off and kept playing, learning to be more careful.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "health", "value": -2 },
+                    { "stat": "smarts", "value": 1 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Cry and go inside",
+              "description": "You went inside to cry and get bandaged up. The day felt ruined.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": -3 },
+                    { "stat": "health", "value": -1 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        },
+        {
+          "id": "Messy Art Project",
+          "description": "You worked on an art project, but things got messier than planned.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Embrace the mess",
+              "description": "You embraced the mess and created a unique masterpiece. It was worth it.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": 6 },
+                    { "stat": "smarts", "value": 1 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Clean everything up",
+              "description": "You focused on cleaning up instead of finishing the art. It was stressful.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": -4 },
+                    { "stat": "looks", "value": 2 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        },
+        {
+          "id": "Lose a Tooth",
+          "description": "You lost a tooth while eating your favorite snack.",
+          "conditions": {
+            "npc_needed": []
+          },
+          "options": [
+            {
+              "id": "Celebrate with a Tooth Fairy visit",
+              "description": "You got excited about the Tooth Fairy visit and showed off your gap with pride.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": 8 },
+                    { "stat": "looks", "value": -2 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            },
+            {
+              "id": "Feel embarrassed about your smile",
+              "description": "You felt embarrassed about your gap-toothed smile and avoided showing it.",
+              "character_effects": [
+                {
+                  "character": "Player",
+                  "effects": [
+                    { "stat": "happiness", "value": -3 },
+                    { "stat": "looks", "value": -1 }
+                  ]
+                }
+              ],
+              "npc_added": []
+            }
+          ]
+        }
+      ]
+      
+    

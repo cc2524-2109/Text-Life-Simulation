@@ -1,0 +1,41 @@
+[
+    {
+      "id": "event_1",
+      "description": "Hello [npc_1]!",
+      "conditions": {
+        "npc_needed": ["npc_1"]
+      },
+      "options": [
+        {
+          "id": "opt_1",
+          "description": "Test Option 1"
+        },
+        {
+          "id": "opt_2",
+          "description": "Test Option 2"
+        }
+      ]
+    },
+    {
+      "id": "event_2",
+      "description": "Test Event 2",
+      "conditions": {
+        "npc_needed": ["npc_1", "npc_2"]
+      },
+      "options": [
+        {
+          "id": "opt_3",
+          "description": "Another Option"
+        }
+      ]
+    },
+    {
+      "id": "event_3",
+      "description": "An event with no conditions or options.",
+      "conditions": {
+        "npc_needed": []
+      },
+      "options": []
+    }
+  ]
+  

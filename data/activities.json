@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Health",
+    "options": [
+      {
+        "name": "Visit Hospital",
+        "accessed": false,
+        "effects": {
+          "stat": "Health",
+          "value": 3,
+          "accessed_msg": "You have already visited the hospital. You are already feeling much better!",
+          "first_access_msg": "The doctor has cured you of your ailment! You are feeling much better!"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mind & Body",
+    "options": [
+      {
+        "name": "Visit Gym",
+        "accessed": false,
+        "effects": {
+          "stat": "Health",
+          "value": 3,
+          "accessed_msg": "You have already visited the gym. You are already feeling much better!",
+          "first_access_msg": "You had a great workout! You are feeling much better!"
+        }
+      },
+      {
+        "name": "Visit Spa",
+        "accessed": false,
+        "effects": {
+          "stat": "Health",
+          "value": 2,
+          "accessed_msg": "You have already visited the spa. You are already feeling much better!",
+          "first_access_msg": "The spa felt great! You are feeling much better!"
+        }
+      },
+      {
+        "name": "Visit Library",
+        "accessed": false,
+        "effects": {
+          "stat": "Smarts",
+          "value": 3,
+          "accessed_msg": "You already studied really hard! Let's take a break.",
+          "first_access_msg": "You studied really hard! You learned a lot of new things!"
+        }
+      }
+    ]
+  },
+  {
+    "name": "School",
+    "options": [
+      {
+        "name": "Study Hard",
+        "accessed": false,
+        "effects": {
+          "stat": "Smarts",
+          "value": 5,
+          "accessed_msg": "You already studied really hard! Let's take a break.",
+          "first_access_msg": "You studied really hard! You learned a lot of new things!"
+        }
+      },
+      {
+        "name": "Join a Club",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 3,
+          "accessed_msg": "You already joined a club! Let's enjoy some free time!",
+          "first_access_msg": "You joined a really interesting club! You really enjoy spending time there!"
+        }
+      },
+      {
+        "name": "Make a Friend",
+        "accessed": false,
+        "effects": {
+          "stat": "Friend",
+          "value": 5,
+          "accessed_msg": " ",
+          "first_access_msg": "You made a new friend! You guys have a great time together!"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Romance",
+    "options": [
+      {
+        "name": "Find a Date (Dating App)",
+        "accessed": false,
+        "effects": {
+          "stat": "Lover",
+          "value": 4,
+          "accessed_msg": "You recently just recently tried to date someone. Let's take some personal time!",
+          "first_access_msg": "You're planning out asking someone out. You are hoping they would agree!."
+        }
+      },
+      {
+        "name": "Ask a Friend Out",
+        "accessed": false,
+        "effects": {
+          "stat": "Friend_Lover",
+          "value": 4,
+          "accessed_msg": "You recently just asked a friend out! Let's spend some more time with them!",
+          "first_access_msg": "You're planning out asking one of your friends out. You are hoping they would agree!."
+        }
+      },
+      {
+        "name": "Propose to Your Lover",
+        "accessed": false,
+        "effects": {
+          "stat": "Marry",
+          "value": 10,
+          "accessed_msg": "You recently just proposed! Let's not rush things!",
+          "first_access_msg": "You're planning to propose to your lover. You are hoping they would agree!"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Finance",
+    "options": [
+      {
+        "name": "Invest in Stocks",
+        "accessed": false,
+        "effects": {
+          "stat": "Stocks",
+          "value": 3,
+          "accessed_msg": "You recently invested in stocks! Let's keep things at a moderate level!",
+          "first_access_msg": "You're planning on buying one of the stocks you've been monitoring for a while. Hopefully, it would grow in value!"
+        }
+      },
+      {
+        "name": "Lottery/Gamble",
+        "accessed": false,
+        "effects": {
+          "stat": "Lottery",
+          "value": 3,
+          "accessed_msg": "You recently gambled! Let's keep things at a moderate level!",
+          "first_access_msg": "You're feeling like testing your luck. You decide to try gambling/buying the lottery."
+        }
+      }
+    ]
+  },
+  {
+    "name": "Career",
+    "options": [
+      {
+        "name": "Get/Change a Job",
+        "accessed": false,
+        "effects": {
+          "stat": "Get/Change Job",
+          "value": 4,
+          "accessed_msg": "You recently just got/changed your job! Let's wait a while and try to keep things stable.",
+          "first_access_msg": "You feel like getting a new/different job."
+        }
+      },
+      {
+        "name": "Ask for a Promotion",
+        "accessed": false,
+        "effects": {
+          "stat": "Promotion",
+          "value": 3,
+          "accessed_msg": "You recently applied for a promotion! Let's wait a bit before applying again!",
+          "first_access_msg": "You feel like you've been working really hard! You decide to apply for a promotion!"
+        }
+      },
+      {
+        "name": "Quit a Job",
+        "accessed": false,
+        "effects": {
+          "stat": "Quit Job",
+          "value": 5,
+          "accessed_msg": "You don't have a job.",
+          "first_access_msg": "You're growing tired of your job. Longing for a sense of freedom, you decide to quit your job!"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Entertainment",
+    "options": [
+      {
+        "name": "Travel",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 3,
+          "accessed_msg": "You already travelled recently! Let's stay put for a while",
+          "first_access_msg": "You decided to travel a bit and visit places! The trip was extremely fun!"
+        }
+      },
+      {
+        "name": "Visit Movies",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 3,
+          "accessed_msg": "You already went to the movies recently! Let's do something else!",
+          "first_access_msg": "You went to watch the new movie that's extremely populat! It was a great movie!"
+        }
+      },
+      {
+        "name": "Shopping",
+        "accessed": false,
+        "effects": {
+          "stat": "Happiness",
+          "value": 3,
+          "accessed_msg": "You already went shopping recently! Let's do something else!",
+          "first_access_msg": "You went shopping and bought some really cool things!"
+        }
+      }
+    ]
+  }
+]
+
+
+
+
+
